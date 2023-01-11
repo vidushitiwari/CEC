@@ -1,0 +1,29 @@
+//Iterative
+
+bool linear(int arr[],int key,int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==key)
+        return true;
+    }
+         return false;
+         
+    
+    
+}   
+
+//Recursive 
+
+bool linear(int arr[],int key,int n)
+{
+    if(n<1)
+    return false;
+    
+    else if(arr[n]==key)
+    return true;
+    else
+    {
+        linear(arr,key,n-1);
+    }
+}
